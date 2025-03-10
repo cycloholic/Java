@@ -16,7 +16,7 @@ The **Secret Santa** application is a Java-based GUI tool that helps organize a 
 ## 📦 Installation & Execution
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/USERNAME/SecretSanta.git
+   git clone https://github.com/cycloholic/Java/SecretSanta.git
    cd SecretSanta
    ```
 2. **Install Required Libraries**
