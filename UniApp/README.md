@@ -23,6 +23,35 @@ UniApp is a Java desktop application that allows users to search for universitie
    ```sh
    git clone https://github.com/YourUsername/Java.git
    cd Java/UniApp
+   ## 🛠 Database Setup (Apache Derby)
+
+UniApp uses **Apache Derby (Java DB)** as a local database to store university data retrieved from an external API. The database is automatically created when you run the application.
+
+### **➡️ How to Set Up Derby (if needed)**
+1. **Download Apache Derby** if not already installed:
+   - Derby comes pre-installed with NetBeans. If you're using NetBeans, no extra setup is required.
+   - Otherwise, you can download it from [Apache Derby](https://db.apache.org/derby/).
+
+2. **Ensure the Derby Server is Running**
+   - If using NetBeans:
+     - Go to `Services` → `Databases`
+     - Right-click on `Java DB` → `Start Server`
+   - If using command line:
+     ```sh
+     java -jar derbyrun.jar server start
+     ```
+
+3. **Database Connection**
+   - The application connects to the database using:
+     ```
+     jdbc:derby://localhost:1527/UniApp
+     ```
+   - No need to manually create tables. The application handles it.
+
+4. **Run the Application**
+   ```sh
+   java -cp ".;libs/*" UniApp.UniApp_JFrame
+
 
 ## 📸 Screenshots
 
