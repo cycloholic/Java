@@ -50,7 +50,41 @@ UniApp uses **Apache Derby (Java DB)** as a local database to store university d
      ```
      jdbc:derby://localhost:1527/UniApp
      ```
-   - No need to manually create tables. The application handles it.
+   ## 🛠 Database Setup (Apache Derby)
+
+UniApp uses **Apache Derby (Java DB)** as a local database to store university data retrieved from an external API. You need to **manually create the database and tables** before running the application.
+
+### **➡️ How to Set Up Derby**
+1. **Download Apache Derby** (if not already installed):
+   - Derby comes pre-installed with NetBeans. If you're using NetBeans, no extra setup is required.
+   - Otherwise, you can download it from [Apache Derby](https://db.apache.org/derby/).
+
+2. **Ensure the Derby Server is Running**
+   - If using NetBeans:
+     - Go to `Services` → `Databases`
+     - Right-click on `Java DB` → `Start Server`
+   - If using the command line:
+     ```sh
+     java -jar derbyrun.jar server start
+     ```
+
+3. **Create the Database Manually**
+   - Open the **SQL Command Line** in NetBeans or connect via another Derby client.
+   - Run the following SQL commands to create the database and tables:
+
+   ```sql
+   CREATE TABLE UNIAPP (
+       NAME VARCHAR(255) PRIMARY KEY,
+       WEB_PAGE VARCHAR(255) NOT NULL,
+       STATE VARCHAR(255) NOT NULL,
+       CODE VARCHAR(10) NOT NULL,
+       COUNTRY VARCHAR(100) NOT NULL,
+       DOMAIN VARCHAR(255) NOT NULL,
+       PHONE VARCHAR(20),
+       VIEWS INT DEFAULT 0 NOT NULL,
+       COMMENTS VARCHAR(500)
+   );
+
 
 4. **Run the Application**
    ```sh
