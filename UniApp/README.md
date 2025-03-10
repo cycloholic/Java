@@ -16,7 +16,7 @@ UniApp is a Java desktop application that allows users to search for universitie
 - **OkHttp** for API requests
 - **Gson** for JSON parsing
 - **iText PDF** for exporting reports
-- **NetBeans GUI Builder** (optional)
+- **NetBeans GUI Builder** 
  
 🏛 Data Source
 The application fetches university data from the Hipolabs API:
@@ -25,7 +25,7 @@ http://universities.hipolabs.com/search?name=university_name
 ## 📥 Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/YourUsername/Java.git
+   git clone https://github.com/cycloholic/Java/UniApp.git
    cd Java/UniApp
    ## 🛠 Database Setup (Apache Derby)
 
