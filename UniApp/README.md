@@ -23,3 +23,4 @@ UniApp is a Java desktop application that allows users to search for universitie
    ```sh
    git clone https://github.com/YourUsername/Java.git
    cd Java/UniApp
+UniApp/screenshot_main.png
