@@ -45,4 +45,4 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 ## 📸 Screenshots
 
 ### Main Interface
-![Main Interface]((https://github.com/cycloholic/Java/blob/94cfdd2f43a82c220c57b79a93866c726c7e964e/SecretSanta/screenshot_santa.png)
+![Main Interface]((https://github.com/cycloholic/Java/blob/94cfdd2f43a82c220c57b79a93866c726c7e964e/SecretSanta/screenshot_santa.png))
